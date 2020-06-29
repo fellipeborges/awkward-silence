@@ -1,7 +1,19 @@
 <p class="question" *ngIf="current">
-  {{current.id}} - {{current.text}}
+  {{current.text}}
 </p>
 
-<button (click)="onNewQuestion()">
+<p class="question" *ngIf="noFurtherQuestions()">
+  <br><br>
+  Cabou?
+  <br><br>
+  <a href="#" (click)="restartQuestions()">Reiniciar</a>
+</p>
+
+<br><br>
+ainda resta: {{questions.length}}
+
+<br><br>
+
+<button (click)="showNextRandomQuestion()" *ngIf="!noFurtherQuestions()">
   Other
 </button>
