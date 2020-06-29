@@ -19,7 +19,8 @@ export class QuestionComponent implements OnInit {
   }
 
   getQuestions(): void {
-    this.questions = this.questionService.getQuestions();
+    this.questionService.getQuestions()
+      .subscribe(q => this.questions = q);
   }
 
   onNewQuestion(): void {
