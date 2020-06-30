@@ -4,12 +4,16 @@ import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuestionComponent,
-    AboutComponent
+    AboutComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

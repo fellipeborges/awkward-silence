@@ -1,0 +1,20 @@
+.about {
+  margin-top: 20px;
+  text-align: left;
+  width:80%;
+}
+
+.about .quote {
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about .comment {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.about .developedby {
+  margin-top: 30px;
+  font-size: 16px;
+}
