@@ -1,19 +1,19 @@
-<p class="question" *ngIf="current">
-  {{current.text}}
-</p>
+<div class="question">
 
-<p class="question" *ngIf="noFurtherQuestions()">
-  <br><br>
-  Cabou?
-  <br><br>
-  <a href="#" (click)="restartQuestions()">Reiniciar</a>
-</p>
+  <!-- The question -->
+  <p class="quote" *ngIf="current">
+    "{{current.text}}"
+  </p>
 
-<br><br>
-ainda resta: {{questions.length}}
+  <!-- Other question button-->
+  <button class="fixed-btn" (click)="showNextRandomQuestion()" *ngIf="!noFurtherQuestions()">
+    Another
+  </button>
 
-<br><br>
+  <!-- No further questions available-->
+  <p class="nofurtherquestions" *ngIf="noFurtherQuestions()">
+    Oops... Looks like we are out of questions.
+    <button class="fixed-btn" (click)="restartQuestions()">Restart</button>
+  </p>
 
-<button (click)="showNextRandomQuestion()" *ngIf="!noFurtherQuestions()">
-  Other
-</button>
+</div>

@@ -22,6 +22,11 @@ img#bg-killer {
   top: 0;
   right: -242px;
   z-index: -10;
+  transition: 500ms;
+}
+img#bg-killer:hover {
+  right: -200px;
+  z-index: -10;
 }
 
 h1,
@@ -72,4 +77,28 @@ a:hover {
   width: 100%;
   margin: 0 auto; /* Center the DIV horizontally */
   text-align: center;
+}
+
+.fixed-btn {
+  position: absolute;
+  left:10px;
+  cursor: pointer;
+  bottom: 50px;
+  background-color: rgb(214, 0, 43);
+  color: #fff;
+  border: 1px solid rgb(177, 0, 34);
+  padding: 12px;
+  font-size: 22px;
+}
+
+.fixed-btn:hover, .fixed-btn:active {
+  background-color: rgb(177, 0, 34);
+}
+
+.quote {
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline;
+  padding: 3px;
+  line-height: 48px;
 }
