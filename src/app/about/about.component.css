@@ -7,6 +7,8 @@
 .about .quote {
   font-size: 30px;
   background-color: rgba(0, 0, 0, 0.5);
+  display: inline;
+  padding: 3px;
 }
 
 .about .comment {
