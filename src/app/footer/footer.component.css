@@ -1,0 +1,6 @@
+.fixed-language-box {
+  position: absolute;
+  right: 30px;
+  bottom: 5px;
+  transition: 500ms;
+}
