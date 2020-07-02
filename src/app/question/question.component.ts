@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Question } from '../model/question';
 import { QuestionService } from './question.service';
+import { LocalizationService } from '../localization/localization.service';
 
 @Component({
   selector: 'app-question',
@@ -11,8 +12,9 @@ export class QuestionComponent implements OnInit {
   questions: Question[];
   current: Question;
 
-  constructor(private questionService: QuestionService) {
-  }
+  constructor(
+    private questionService: QuestionService,
+    public localizationService: LocalizationService) {}
 
   ngOnInit(): void {
     this.getQuestions();

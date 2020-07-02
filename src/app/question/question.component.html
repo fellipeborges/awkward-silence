@@ -7,13 +7,15 @@
 
   <!-- Other question button-->
   <button class="fixed-btn" (click)="showNextRandomQuestion()" *ngIf="!noFurtherQuestions()">
-    Another
+    {{localizationService.Instance.btnAnother}}
   </button>
 
   <!-- No further questions available-->
   <p class="nofurtherquestions" *ngIf="noFurtherQuestions()">
-    Oops... Looks like we are out of questions.
-    <button class="fixed-btn" (click)="restartQuestions()">Restart</button>
+    {{localizationService.Instance.noFurterQuestions}}
+    <button class="fixed-btn" (click)="restartQuestions()">
+      {{localizationService.Instance.btnRestart}}
+    </button>
   </p>
 
 </div>

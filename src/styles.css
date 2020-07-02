@@ -47,6 +47,7 @@ a:visited,
 a:hover {
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .fixed-header,
@@ -83,7 +84,7 @@ a:hover {
   position: absolute;
   left:10px;
   cursor: pointer;
-  bottom: 50px;
+  bottom: 60px;
   background-color: rgb(214, 0, 43);
   color: #fff;
   border: 1px solid rgb(177, 0, 34);

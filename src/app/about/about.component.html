@@ -1,24 +1,24 @@
 <div class="about">
   <p class="quote">
-    "Silence ins't empty, it's full of answers"
+    "{{localizationService.Instance.aboutQuote}}"
   </p>
 
   <p class="comment">
-    But not.
-    <br />It's better if we talk to each other.
+    {{localizationService.Instance.butNot}}
+    <br />{{localizationService.Instance.betterToTalk}}
   </p>
 
   <p class="developedby">
-    Developed by <a href="https://github.com/fellipeborges" target="_blank">Fellipe Borges</a>.
+    {{localizationService.Instance.developedBy}} <a href="https://github.com/fellipeborges" target="_blank">Fellipe Borges</a>.
     <br>
-    Questions were obtained from <a href="https://reddit.com/r/askReddit" target="_blank">r/askReddit</a>.
+    {{localizationService.Instance.questionsFrom}} <a href="https://reddit.com/r/askReddit" target="_blank">r/askReddit</a>.
     <br>
     <a href="https://github.com/fellipeborges/awkward-silence-killer" target="_blank">
-      Source code on Github.
+      {{localizationService.Instance.sourceCodeOn}}
     </a>
   </p>
 
   <p class="goback">
-    <button class="fixed-btn" routerLink="/">Go back to questions</button>
+    <button class="fixed-btn" routerLink="/">{{localizationService.Instance.btnGoBackToQuestions}}</button>
   </p>
 </div>
