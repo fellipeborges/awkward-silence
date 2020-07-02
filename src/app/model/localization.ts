@@ -1,4 +1,7 @@
 export interface Localization {
+  // Meta
+  locate: string;
+
   // Application
   appName: string;
 

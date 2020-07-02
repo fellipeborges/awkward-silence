@@ -1,8 +1,8 @@
 <div class="question">
 
   <!-- The question -->
-  <p class="quote" *ngIf="current">
-    "{{current.text}}"
+  <p class="quote" *ngIf="currentQuestion">
+    "{{localizationService.localizeQuestion(currentQuestion)}}"
   </p>
 
   <!-- Other question button-->

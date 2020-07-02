@@ -1,6 +1,9 @@
 import { Localization } from '../../model/localization';
 
 export const LOCALIZATION_EN_US: Localization = {
+  // Meta
+  locate: 'en-us',
+
   // App
   appName: 'ASK - Awkward Silence Killer',
 

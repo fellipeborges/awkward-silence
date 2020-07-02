@@ -1,3 +1,4 @@
 export interface Question {
-  text: string;
+  enUs: string;
+  ptBr: string;
 }

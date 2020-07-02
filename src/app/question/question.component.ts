@@ -10,7 +10,7 @@ import { LocalizationService } from '../localization/localization.service';
 })
 export class QuestionComponent implements OnInit {
   questions: Question[];
-  current: Question;
+  currentQuestion: Question;
 
   constructor(
     private questionService: QuestionService,
@@ -34,7 +34,7 @@ export class QuestionComponent implements OnInit {
   // If the questions array is empty nothing is done.
   showNextRandomQuestion(): void {
     // Cleans the current question
-    this.current = undefined;
+    this.currentQuestion = undefined;
 
     // Checks if the array still contains questions
     if (!this.questions){
@@ -47,7 +47,7 @@ export class QuestionComponent implements OnInit {
     const index: number = Math.floor(Math.random() * (max - min + 1) + min);
 
     // Sets the current questions
-    this.current = this.questions[index];
+    this.currentQuestion = this.questions[index];
 
     // Removes the question from the array
     this.questions.splice(index, 1);
@@ -55,7 +55,7 @@ export class QuestionComponent implements OnInit {
 
   // Checks if there are more questions to be shown
   noFurtherQuestions(): boolean {
-    return this.questions.length === 0 && !this.current;
+    return this.questions.length === 0 && !this.currentQuestion;
   }
 
   // Rebuilds the list of questions
