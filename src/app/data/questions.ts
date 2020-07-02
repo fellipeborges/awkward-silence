@@ -7,11 +7,11 @@ export const QUESTIONS: Question[] = [
   },
   {
     enUs: 'What are some VERY comforting facts?',
-    ptBr: 'Cite algums fatos MUITO reconfortantes.'
+    ptBr: 'Cite alguns fatos MUITO reconfortantes.'
   },
   {
     enUs: 'What are some VERY creepy facts?',
-    ptBr: 'Cite algums fatos MUITO macabros.'
+    ptBr: 'Cite alguns fatos MUITO macabros.'
   },
   {
     enUs: 'What was the stupidest thing you believed as a kid?',
