@@ -6,14 +6,14 @@
   </p>
 
   <!-- Other question button-->
-  <button class="fixed-btn" (click)="showNextRandomQuestion()" *ngIf="!noFurtherQuestions()">
+  <button class="btn" (click)="showNextRandomQuestion()" *ngIf="!noFurtherQuestions()">
     {{localizationService.Instance.btnAnother}}
   </button>
 
   <!-- No further questions available-->
   <p class="nofurtherquestions" *ngIf="noFurtherQuestions()">
     {{localizationService.Instance.noFurterQuestions}}
-    <button class="fixed-btn" (click)="restartQuestions()">
+    <button class="btn" (click)="restartQuestions()">
       {{localizationService.Instance.btnRestart}}
     </button>
   </p>

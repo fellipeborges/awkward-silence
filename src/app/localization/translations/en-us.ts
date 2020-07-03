@@ -14,15 +14,12 @@ export const LOCALIZATION_EN_US: Localization = {
 
   // About
   about: 'About',
-  aboutQuote: 'Silence ins\'t empty, it\'s full of answers',
-  butNot: 'But not',
-  betterToTalk: 'It\'s better if we talk to each other.',
   developedBy: 'Developed by',
   questionsFrom: 'Questions were obtained from',
-  sourceCodeOn: 'Source code on Github',
+  sourceCodeOn: 'Source code on',
   btnGoBackToQuestions: 'Go back to questions',
 
   // Localization
-  languageEnglish: 'English',
-  languagePortuguese: 'Português'
+  languageEnglish: 'English version',
+  languagePortuguese: 'Versão em português'
 };

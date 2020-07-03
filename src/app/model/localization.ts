@@ -12,9 +12,6 @@ export interface Localization {
 
   // About
   about: string;
-  aboutQuote: string;
-  butNot: string;
-  betterToTalk: string;
   developedBy: string;
   questionsFrom: string;
   sourceCodeOn: string;

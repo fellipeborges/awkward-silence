@@ -9,25 +9,12 @@ html {
 }
 
 body {
-  background-color: #ff7700;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-color: #330000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
   padding-top: 40px;
   padding-bottom: 20px;
-}
-
-img#bg-killer {
-  position: fixed;
-  top: 0;
-  right: -242px;
-  z-index: -10;
-  transition: 500ms;
-}
-img#bg-killer:hover {
-  right: -200px;
-  z-index: -10;
 }
 
 h1,
@@ -55,52 +42,54 @@ a:hover {
 .fixed-footer {
   width: 100%;
   position: fixed;
-  padding: 10px;
   color: #fff;
 }
 
 .fixed-header {
-  background: rgba(0, 0, 0, 0.3);
+  background-color: #330000;
   font-weight: 600;
   font-size: 18px;
   text-align: center;
   top: 0;
   left: 0;
+  padding: 10px;
 }
 
 .fixed-footer {
-  bottom: 0;
+  background-color: #000;
+  bottom: -1px;
   left: 0;
+  font-size: 12px;
   text-align: center;
-  font-size: 1em;
+  padding: 5px;
 }
 
 .content {
   width: 100%;
   margin: 0 auto; /* Center the DIV horizontally */
+  margin-bottom: 25px;
   text-align: center;
 }
 
-.fixed-btn {
-  position: absolute;
-  left:10px;
+.btn {
   cursor: pointer;
-  bottom: 60px;
-  background-color: rgb(214, 0, 43);
-  color: #fff;
-  border: 1px solid rgb(177, 0, 34);
-  padding: 12px;
-  font-size: 22px;
+  background-color: #fff;
+  color: #510632;
+  padding: 10px;
+  font-size: 20px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(59, 59, 59, 0.5);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(59, 59, 59, 0.5);
+  box-shadow: 5px 5px 10px 0px rgba(59, 59, 59, 0.5);
 }
 
-.fixed-btn:hover, .fixed-btn:active {
-  background-color: rgb(177, 0, 34);
+.btn:hover,
+.btn:active {
+  background-color: #fff;
 }
 
 .quote {
-  font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: inline;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 3px;
-  line-height: 48px;
+  margin-bottom: 15px;
 }

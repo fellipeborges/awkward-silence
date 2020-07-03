@@ -14,15 +14,12 @@ export const LOCALIZATION_PT_BR: Localization = {
 
   // About
   about: 'Sobre',
-  aboutQuote: 'O silêncio não é vazio, ele é cheio de respostas',
-  butNot: 'Só que não',
-  betterToTalk: 'É melhor conversar com as pessoas.',
   developedBy: 'Desenvolvido por',
   questionsFrom: 'Perguntas obtidas em',
-  sourceCodeOn: 'Código fonte no Github',
+  sourceCodeOn: 'Código fonte no',
   btnGoBackToQuestions: 'Voltar para as perguntas',
 
   // Localization
-  languageEnglish: 'English',
-  languagePortuguese: 'Português'
+  languageEnglish: 'English version',
+  languagePortuguese: 'Versão em português'
 };

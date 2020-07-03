@@ -1,24 +1,33 @@
+<!-- <div class="about">
+    > {{localizationService.Instance.developedBy}} <a href="https://github.com/fellipeborges" target="_blank">Fellipe Borges</a>.
+
+    <br>
+
+    > {{localizationService.Instance.questionsFrom}} <a href="https://reddit.com/r/askReddit" target="_blank">r/askReddit</a>.
+
+    <br>
+
+    > {{localizationService.Instance.sourceCodeOn}} <a href="https://github.com/fellipeborges/awkward-silence-killer" target="_blank">Github</a>.
+
+    <button class="btn goback" routerLink="/">{{localizationService.Instance.btnGoBackToQuestions}}</button>
+</div> -->
+
 <div class="about">
-  <p class="quote">
-    "{{localizationService.Instance.aboutQuote}}"
-  </p>
+  <ul>
+    <li>
+      {{localizationService.Instance.developedBy}} <a href="https://github.com/fellipeborges" target="_blank">Fellipe Borges</a>
+    </li>
 
-  <p class="comment">
-    {{localizationService.Instance.butNot}}
-    <br />{{localizationService.Instance.betterToTalk}}
-  </p>
+    <li>
+      {{localizationService.Instance.questionsFrom}} <a href="https://reddit.com/r/askReddit" target="_blank">r/askReddit</a>
+    </li>
 
-  <p class="developedby">
-    {{localizationService.Instance.developedBy}} <a href="https://github.com/fellipeborges" target="_blank">Fellipe Borges</a>.
-    <br>
-    {{localizationService.Instance.questionsFrom}} <a href="https://reddit.com/r/askReddit" target="_blank">r/askReddit</a>.
-    <br>
-    <a href="https://github.com/fellipeborges/awkward-silence-killer" target="_blank">
-      {{localizationService.Instance.sourceCodeOn}}
-    </a>
-  </p>
+    <li>
+      {{localizationService.Instance.sourceCodeOn}} <a href="https://github.com/fellipeborges/awkward-silence-killer" target="_blank">Github</a>
+    </li>
+  </ul>
 
-  <p class="goback">
-    <button class="fixed-btn" routerLink="/">{{localizationService.Instance.btnGoBackToQuestions}}</button>
-  </p>
+  <button class="btn goback" routerLink="/">{{localizationService.Instance.btnGoBackToQuestions}}</button>
 </div>
+
+<img id="bg-killer" src="../../assets/img/silence-killer.png">
