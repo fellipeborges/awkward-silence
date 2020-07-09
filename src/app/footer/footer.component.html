@@ -1,17 +1,17 @@
 <a routerLink="/about">
   {{ localizationService.Instance.about }}
-  |
-  <a
-    *ngIf="localizationService.Instance.locate != 'pt-br'"
-    (click)="setLocalization('pt-br')"
-  >
-    {{ localizationService.Instance.languagePortuguese }}
-  </a>
+</a>
+|
+<a
+  *ngIf="localizationService.Instance.locate != 'pt-br'"
+  (click)="setLocalization('pt-br')"
+>
+  {{ localizationService.Instance.languagePortuguese }}
+</a>
 
-  <a
-    *ngIf="localizationService.Instance.locate != 'en-us'"
-    (click)="setLocalization('en-us')"
-  >
-    {{ localizationService.Instance.languageEnglish }}
-  </a>
+<a
+  *ngIf="localizationService.Instance.locate != 'en-us'"
+  (click)="setLocalization('en-us')"
+>
+  {{ localizationService.Instance.languageEnglish }}
 </a>
